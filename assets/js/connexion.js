@@ -25,4 +25,9 @@ window.addEventListener('DOMContentLoaded', event => {
         },200)
     }
     typing();
+
+
+    setTimeout(() => {
+        window.location.href="chargement.html";
+    },2000)
 })
