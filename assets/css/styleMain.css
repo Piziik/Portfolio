@@ -1,0 +1,29 @@
+html { 
+    overflow-y: hidden;
+	background: url(../img/wallpaper.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.nav{
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    bottom:-2.3%;
+    position: fixed;
+    background: white;
+    max-height: 7%;
+    min-height: 7%;
+    max-width: 60%;
+    min-width: 60%;
+    border-radius: 15px 15px 15px 15px;
+    opacity: 0.2;
+}
+
+#vs{
+    min-width: 70px;
+    max-width: 70px;
+    left: 100px;
+}
