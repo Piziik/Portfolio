@@ -18,12 +18,40 @@ html {
     min-height: 7%;
     max-width: 60%;
     min-width: 60%;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px;
     opacity: 0.2;
 }
 
 #vs{
     min-width: 70px;
     max-width: 70px;
-    left: 100px;
+    max-height: 70px;
+    min-height: 70px;
+}
+
+.folder{
+    min-width: 55px;
+    max-width: 55px;
+    max-height: 55px;
+    min-height: 55px;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+}
+
+p{
+    color: white;
+    padding: 0 0 0 20px;
+    margin: 0;
+    min-height: 55px;
+    min-width: 55px;
+    max-height: 55px;
+    max-width: 55px;
+    src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rubik:wght@300&display=swap');
+	font-family: 'Quicksand', sans-serif;
+    /*text-shadow: 0px 1px 1px white;*/
+}
+
+.doss{
+    width: 5%;
+    text-align: center;
 }
