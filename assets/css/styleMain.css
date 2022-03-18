@@ -7,11 +7,28 @@ html {
 	background-size: cover;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#nav-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 10%;
+    max-height: 10%;
+    bottom: 10px;
+}
+
 .nav{
-    left: 50%;
+    /*left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    bottom:-2.3%;
+    bottom:-2.3%;*/
     position: fixed;
     background: white;
     max-height: 7%;
@@ -20,6 +37,7 @@ html {
     min-width: 60%;
     border-radius: 20px;
     opacity: 0.2;
+    animation: navbar 0.5s linear;
 }
 
 #vs{
@@ -36,6 +54,7 @@ html {
     min-height: 55px;
     padding: 0 20px 0 20px;
     cursor: pointer;
+    animation: doss 0.5s linear;
 }
 
 p{
@@ -49,9 +68,39 @@ p{
     src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rubik:wght@300&display=swap');
 	font-family: 'Quicksand', sans-serif;
     /*text-shadow: 0px 1px 1px white;*/
+    animation: doss 0.5s linear;
 }
 
 .doss{
-    width: 5%;
+    max-width: 5%;
+    min-width: 5%;
     text-align: center;
+}
+
+@keyframes navbar {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0.2;
+        transform: translateY(0px);
+    }
+
+}
+@keyframes doss {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
