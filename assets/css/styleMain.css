@@ -95,6 +95,7 @@ html {
     border-radius: 20px;
     animation: navbar 0.5s linear;
     align-content: center;
+    z-index: 999;
 }
 
 #nav-container {
