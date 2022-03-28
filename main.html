@@ -1,33 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0; user-scalable=no;' name='viewport' />
-    <title>Gab</title>
-    <link rel="stylesheet" href="assets/css/styleMain.css">
-    <script src="assets/js/main.js"></script>
-</head>
-<body>
-    <div id="nav-container">
-        <div class="nav"></div>
-    </div>
-    <div class="ligne-1">
-        <div class="doss">
-            <a><img class="folder" src="assets/img/folder.png"></a>
-            <p>Tholdi</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,' name='viewport'/>
+        <title>Gab</title>
+        <link rel="stylesheet" href="assets/css/styleMain.css">
+        <script src="assets/js/main.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="uneNav">
+                <img style="margin-left: 35px;" class="logos" src="assets/img/VSLogo.png">
+                <img class="logos" src="assets/img/phpStormLogo.png">
+                <img class="logos" src="assets/img/GitHubLogo.png">
+                <img class="logos" src="assets/img/androidStudio.png">
+                <img class="logos" src="assets/img/vscodeLogo.png">
+                <img class="logos" src="assets/img/pycharmLogo.png">
+                <img class="logos" src="assets/img/WORDLOGO.png">
+                <img class="logos" src="assets/img/ppLogo.png">
+                <img class="logos" src="assets/img/GITLOGO.png">
+                <img class="logos" src="assets/img/unityLogo.png">
+                <img class="logos" src="assets/img/blenderLogo.png">
+                <img class="logos" src="assets/img/sublimeTextLogo.png">
+                <img class="logos" src="assets/img/riotLogo.png">
+                <img style="width: 85px" class="logos" src="assets/img/virtualBox.png">
+            </div>
         </div>
-        <div class="doss">
-            <a><img class="folder" src="assets/img/folder.png"></a>
-            <p>PPE4</p>
+        <div id="nav-container">
+            <div class="nav">
+                
+            </div>
         </div>
-        <div class="doss">
-            <a><img class="folder" src="assets/img/folder.png"></a>
-            <p>Stage</p>
+        <div class="ligne-1">
+            <div class="doss" style="margin-top: 20px;">
+                <a id="aDeTholdi"><img class="folder" src="assets/img/folder.png"></a>
+                <p class="textFolder">Tholdi</p>
+            </div>
+            <div class="doss">
+                <a id="aDePpe4"><img class="folder" src="assets/img/folder.png"></a>
+                <p class="textFolder">PPE</p>
+            </div>
+            <div class="doss">
+                <a id="aDeVeille"><img class="folder" src="assets/img/folder.png"></a>
+                <p class="textFolder">Veille</p>
+            </div>
+            <div class="doss">
+                <a id="aDeStage"><img class="folder" src="assets/img/folder.png"></a>
+                <p class="textFolder">Stage</p>
+            </div>
         </div>
-        <div class="doss">
-            <a><img class="folder" src="assets/img/folder.png"></a>
-            <p>Veille</p>
+        <div class="folder-container" id="tholdi">
+            <p class="explorerTitle">Explorateur de fichiers - Tholdi</p>
+            <div class="btn-RGY">
+                <button class="rounded green"></button>
+                <button class="rounded yellow"></button> 
+                <button class="rounded red" id="close"></button>
+            </div>
+            <div class="explorerFiles">
+                <a href="http://lysun.fr/Tholdi/" target="_blank"><img class="files" src="assets/img/NET.png"></a>
+                <p class="explorerText">Site</p>
+            </div>
+            
+            
         </div>
-    </div>
-</body>
+        <div class="folder-container" id="ppe4">
+            <p class="explorerTitle">Explorateur de fichiers - PPE</p>
+            <div class="btn-RGY">
+                <button class="rounded green"></button>
+                <button class="rounded yellow"></button> 
+                <button class="rounded red" id="close"></button>
+            </div>
+        </div>
+        <div class="folder-container" id="stage">
+            <p class="explorerTitle">Explorateur de fichiers - Stage</p>
+            <div class="btn-RGY">
+                <button class="rounded green"></button>
+                <button class="rounded yellow"></button> 
+                <button class="rounded red" id="close"></button>
+            </div>
+            <div class="explorerFiles">
+                <a href="assets/doc/SuiviDeStageGabrielleDoffe.pdf" target="_blank"><img style="margin-left: 35px;" class="files" src="assets/img/txt.png"></a>
+                <p class="explorerText">SuivisDeStage</p>
+            </div>
+            <div class="explorerFiles">
+                <a href="assets/doc/CVGabrielle.pdf" target="_blank"><img style="margin-left: 35px;" class="files" src="assets/img/txt.png"></a>
+                <p style="margin-left: 55px;" class="explorerText">CV</p>
+            </div>     
+        </div>
+        <div class="folder-container" id="veille">
+            <p class="explorerTitle">Explorateur de fichiers - Veille</p>
+            <div class="btn-RGY">
+                <button class="rounded green"></button>
+                <button class="rounded yellow"></button> 
+                <button class="rounded red" id="close"></button>
+            </div>   
+        </div>
+    </body>
 </html>

@@ -12,6 +12,91 @@ html {
     padding: 0;
 }
 
+.folder-container{
+    height: 550px;
+    width: 800px;
+    background-color: #575757;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: relative;
+    border-radius: 20px;
+    display: none;
+}
+
+.explorerTitle{
+    color: white;
+    src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rubik:wght@300&display=swap');
+	font-family: 'Quicksand', sans-serif;
+    width: 97%;
+    justify-content: center;
+    display: flex;
+    top: 8px;
+    position: relative;
+}
+
+.explorerText{
+    color: white;
+    src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rubik:wght@300&display=swap');
+	font-family: 'Quicksand', sans-serif;
+    margin-left: 17px;
+}
+
+.explorerFiles{
+    margin: 50px 20px 0 20px;
+}
+
+.navbar{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 10%;
+    max-height: 10%;
+    bottom: 10px;
+}
+
+.rounded{
+    border-radius: 20px;
+    width: 16px;
+    height: 16px;
+    margin: 5px 5px 0 0;
+    border: none;
+}
+
+.btn-RGY{
+    margin-left: 90%;
+    position: relative;
+    top: -15px;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: lime;
+}
+
+
+.uneNav{
+    position: fixed;
+    background: none;
+    max-height: 7%;
+    min-height: 7%;
+    max-width: 60%;
+    min-width: 60%;
+    border-radius: 20px;
+    animation: navbar 0.5s linear;
+    align-content: center;
+}
+
 #nav-container {
     display: flex;
     position: absolute;
@@ -22,6 +107,13 @@ html {
     min-height: 10%;
     max-height: 10%;
     bottom: 10px;
+}
+
+.logos{
+    height: 60px;
+    width: 60px;
+    opacity: 1;
+    margin: 5px 5px 0 5px;
 }
 
 .nav{
@@ -57,7 +149,7 @@ html {
     animation: doss 0.5s linear;
 }
 
-p{
+.textFolder{
     color: white;
     padding: 0 0 0 20px;
     margin: 0;
