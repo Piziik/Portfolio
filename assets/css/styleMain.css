@@ -12,6 +12,14 @@ html {
     padding: 0;
 }
 
+::selection {
+    color: unset;
+}
+
+.ligne-1{
+    user-select: none;
+}
+
 .folder-container{
     height: 550px;
     width: 800px;
@@ -19,7 +27,8 @@ html {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     left: 50%;
-    position: relative;
+    top: 50%;
+    position: fixed;
     border-radius: 20px;
     display: none;
 }
@@ -33,6 +42,16 @@ html {
     display: flex;
     top: 8px;
     position: relative;
+}
+
+#moveable{
+    width: 710px;
+    height: 27px;
+    z-index: 1;
+    border-radius: 20px 0 0 0;
+    position: absolute;
+    cursor: move;
+    border-right: 2px solid gray;
 }
 
 .explorerText{
@@ -56,6 +75,7 @@ html {
     min-height: 10%;
     max-height: 10%;
     bottom: 10px;
+    z-index: 9999;
 }
 
 .rounded{
@@ -64,12 +84,14 @@ html {
     height: 16px;
     margin: 5px 5px 0 0;
     border: none;
+    cursor: pointer;
 }
 
 .btn-RGY{
     margin-left: 90%;
     position: relative;
     top: -15px;
+    cursor: default;
 }
 
 .red{
@@ -95,7 +117,7 @@ html {
     border-radius: 20px;
     animation: navbar 0.5s linear;
     align-content: center;
-    z-index: 999;
+    z-index: 9998;
 }
 
 #nav-container {
@@ -108,6 +130,7 @@ html {
     min-height: 10%;
     max-height: 10%;
     bottom: 10px;
+    z-index: 9997;
 }
 
 .logos{
@@ -148,6 +171,7 @@ html {
     padding: 0 20px 0 20px;
     cursor: pointer;
     animation: doss 0.5s linear;
+    user-select: none;
 }
 
 .textFolder{
@@ -168,6 +192,7 @@ html {
     max-width: 5%;
     min-width: 5%;
     text-align: center;
+    user-select: none;
 }
 
 @keyframes navbar {

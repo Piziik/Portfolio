@@ -34,24 +34,38 @@
             </div>
         </div>
         <div class="ligne-1">
-            <div class="doss" style="margin-top: 20px;">
-                <a id="aDeTholdi"><img class="folder" src="assets/img/folder.png"></a>
+            <div class="doss" id="doss" style="margin-top: 25px;">
+                <a id="aDeBin" style="margin-left: 4px"><img class="folder" src="assets/img/bin.png" draggable="false"></a>
+                <p class="textFolder">Corbeille</p>
+            </div>
+            <div class="doss" id="doss">
+                <a id="aDeTholdi"><img class="folder" src="assets/img/folder.png" draggable="false"></a>
                 <p class="textFolder">Tholdi</p>
             </div>
-            <div class="doss">
-                <a id="aDePpe4"><img class="folder" src="assets/img/folder.png"></a>
+            <div class="doss" id="doss">
+                <a id="aDePpe4"><img class="folder" src="assets/img/folder.png" draggable="false"></a>
                 <p class="textFolder">PPE</p>
             </div>
-            <div class="doss">
-                <a id="aDeVeille"><img class="folder" src="assets/img/folder.png"></a>
+            <div class="doss" id="doss">
+                <a id="aDeVeille"><img class="folder" src="assets/img/folder.png" draggable="false"></a>
                 <p class="textFolder">Veille</p>
             </div>
-            <div class="doss">
-                <a id="aDeStage"><img class="folder" src="assets/img/folder.png"></a>
+            <div class="doss" id="doss">
+                <a id="aDeStage"><img class="folder" src="assets/img/folder.png" draggable="false"></a>
                 <p class="textFolder">Stage</p>
             </div>
         </div>
+        <div class="folder-container" id="bin">
+            <div id="moveable"></div>
+            <p class="explorerTitle">Corbeille</p>
+            <div class="btn-RGY">
+                <button class="rounded green"></button>
+                <button class="rounded yellow"></button> 
+                <button class="rounded red" id="close"></button>
+            </div>
+        </div>
         <div class="folder-container" id="tholdi">
+            <div id="moveable"></div>
             <p class="explorerTitle">Explorateur de fichiers - Tholdi</p>
             <div class="btn-RGY">
                 <button class="rounded green"></button>
@@ -68,6 +82,7 @@
             </div>
         </div>
         <div class="folder-container" id="ppe4">
+            <div id="moveable"></div>
             <p class="explorerTitle">Explorateur de fichiers - PPE</p>
             <div class="btn-RGY">
                 <button class="rounded green"></button>
@@ -79,7 +94,21 @@
                 <p class="explorerText">Documentation</p>
             </div>
         </div>
+        <div class="folder-container" id="veille">
+            <div id="moveable"></div>
+            <p class="explorerTitle">Explorateur de fichiers - Veille</p>
+            <div class="btn-RGY">
+                <button class="rounded green"></button>
+                <button class="rounded yellow"></button> 
+                <button class="rounded red" id="close"></button>
+            </div>   
+            <div class="explorerFiles">
+                <a href="assets/doc/L'evolutionDesSmartphones.pdf" target="_blank"><img style="margin-left: 35px;" class="files" src="assets/img/txt.png"></a>
+                <p style="margin-left: 48px;" class="explorerText">Veille</p>
+            </div>
+        </div>
         <div class="folder-container" id="stage">
+            <div id="moveable"></div>
             <p class="explorerTitle">Explorateur de fichiers - Stage</p>
             <div class="btn-RGY">
                 <button class="rounded green"></button>
@@ -94,18 +123,6 @@
                 <a href="assets/doc/CVGabrielle.pdf" target="_blank"><img style="margin-left: 35px;" class="files" src="assets/img/txt.png"></a>
                 <p style="margin-left: 55px;" class="explorerText">CV</p>
             </div>     
-        </div>
-        <div class="folder-container" id="veille">
-            <p class="explorerTitle">Explorateur de fichiers - Veille</p>
-            <div class="btn-RGY">
-                <button class="rounded green"></button>
-                <button class="rounded yellow"></button> 
-                <button class="rounded red" id="close"></button>
-            </div>   
-            <div class="explorerFiles">
-                <a href="assets/doc/L'evolutionDesSmartphones.pdf" target="_blank"><img style="margin-left: 35px;" class="files" src="assets/img/txt.png"></a>
-                <p style="margin-left: 48px;" class="explorerText">Veille</p>
-            </div>
         </div>
     </body>
 </html>
